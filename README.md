@@ -59,6 +59,7 @@ All templates are already configured to bind mount to various places on your dri
 - beets
 - booksonic
 - bookstack
+- calibre
 - calibre-web
 - cardigann
 - Chevereto

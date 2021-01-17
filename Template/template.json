@@ -1664,6 +1664,43 @@
 					"container": "/config"
 				}
 			]
+		},		
+		{
+			"categories": [
+				"Tools",
+				"Books",
+				"Other"
+			],
+			"description": "Calibre is a powerful and easy to use e-book manager",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/calibre:latest",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/calibre.png",
+			"name": "calibre",
+			"platform": "linux",
+			"ports": [
+				"8080:8080",
+				"8081:8081"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Calibre",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Calibre",
+					"container": "/config"
+				}
+			]
 		},
 		{
 			"categories": [
